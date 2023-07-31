@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tabs-border-bottom {
+    box-shadow: inset 0 calc(-1 * (var(--tab-border, 1px) + 1px)) 0 hsl(var(--bc) / var(--tw-border-opacity));
+    --tw-border-opacity: 0.2;
+  }
+
+  .app-logo {
+    height: 5vmin;
+    pointer-events: none;
+    margin-right: 8px;
+  }
+}
